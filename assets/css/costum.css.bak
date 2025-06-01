@@ -1,0 +1,32 @@
+.myeffect ol {
+  --height: 3.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: var(--height);
+  line-height: var(--height);
+  overflow: hidden;
+}
+
+.myeffect ol li {
+  height: var(--height);
+  animation: slide-up 6s infinite;
+}
+
+@keyframes slide-up {
+  0%, 20% {
+    transform: translateY(0%);
+  }
+  25%, 45% {
+    transform: translateY(-100%);
+  }
+  50%, 70% {
+    transform: translateY(-200%);
+  }
+  75%, 85% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

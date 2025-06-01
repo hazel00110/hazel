@@ -1,0 +1,172 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Hazel"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+
+  [params.author]
+  name = "Hazel Pernanda Putra"
+  alias = "Hazel"
+  email = "hazelfernanda001@gmail.com"
+  image = "me.jpg"
+  imageQuality = 96
+  headline = "I'm only human"
+  bio = "A little bit about you"
+  about = """
+  COMPUTER VISION ENTHUSIAST
+  SOFTWARE DEVELOPER
+  ANJAY MABAR
+  ASDLKDSA ASDSAD
+  FSAFF ASF FSAS dataD
+  """
+
+    [[params.author.links]]
+    email = "mailto:hello@your_domain.com"
+
+    [[params.author.links]]
+    link = "https://link-to-some-website.com/"
+
+    [[params.author.links]]
+    amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id"
+
+    [[params.author.links]]
+    linkedin = "https://linkedin.com/in/username"
+
+    [[params.author.links]]
+    apple = "https://www.apple.com"
+
+#    [[params.author.links]]
+#    blogger = "https://username.blogspot.com/"
+#
+#    [[params.author.links]]
+#    bluesky = "https://bsky.app/profile/username"
+#
+#    [[params.author.links]]
+#    codepen = "https://codepen.io/username"
+#
+#    [[params.author.links]]
+#    dev = "https://dev.to/username"
+#
+#    [[params.author.links]]
+#    discord = "https://discord.gg/invitecode"
+#
+#    [[params.author.links]]
+#    dribbble = "https://dribbble.com/username"
+#
+#    [[params.author.links]]
+#    facebook = "https://facebook.com/username"
+#
+#    [[params.author.links]]
+#    flickr = "https://www.flickr.com/photos/username/"
+#
+#    [[params.author.links]]
+#    foursquare = "https://foursquare.com/username"
+#
+#    [[params.author.links]]
+#    github = "https://github.com/username"
+#
+#    [[params.author.links]]
+#    gitlab = "https://gitlab.com/username"
+#
+#    [[params.author.links]]
+#    google = "https://www.google.com/"
+#
+#    [[params.author.links]]
+#    hashnode = "https://username.hashnode.dev"
+#
+#    [[params.author.links]]
+#    instagram = "https://instagram.com/username"
+#
+#    [[params.author.links]]
+#    itch-io = "https://username.itch.io"
+#
+#    [[params.author.links]]
+#    keybase = "https://keybase.io/username"
+#
+#    [[params.author.links]]
+#    kickstarter = "https://www.kickstarter.com/profile/username"
+#
+#    [[params.author.links]]
+#    lastfm = "https://lastfm.com/user/username"
+#
+#
+#    [[params.author.links]]
+#    mastodon = "https://mastodon.instance/@username"
+#
+#    [[params.author.links]]
+#    medium = "https://medium.com/username"
+#
+#    [[params.author.links]]
+#    microsoft = "https://www.microsoft.com/"
+#
+#    [[params.author.links]]
+#    orcid = "https://orcid.org/userid"
+#
+#    [[params.author.links]]
+#    patreon = "https://www.patreon.com/username"
+#
+#    [[params.author.links]]
+#    pinterest = "https://pinterest.com/username"
+#
+#    [[params.author.links]]
+#    reddit = "https://reddit.com/user/username"
+#
+#    [[params.author.links]]
+#    researchgate = "https://www.researchgate.net/profile/username"
+#
+#    [[params.author.links]]
+#    slack = "https://workspace.url/team/userid"
+#
+#    [[params.author.links]]
+#    snapchat = "https://snapchat.com/add/username"
+#
+#    [[params.author.links]]
+#    soundcloud = "https://soundcloud.com/username"
+#
+#    [[params.author.links]]
+#    spotify = "https://open.spotify.com/user/userid"
+#
+#    [[params.author.links]]
+#    stack-overflow = "https://stackoverflow.com/users/userid/username"
+#
+#    [[params.author.links]]
+#    steam = "https://steamcommunity.com/profiles/userid"
+#
+#    [[params.author.links]]
+#    telegram = "https://t.me/username"
+#
+#    [[params.author.links]]
+#    threads = "https://www.threads.net/@username"
+#
+#    [[params.author.links]]
+#    tiktok = "https://tiktok.com/@username"
+#
+#    [[params.author.links]]
+#    tumblr = "https://username.tumblr.com"
+#
+#    [[params.author.links]]
+#    twitch = "https://twitch.tv/username"
+#
+#    [[params.author.links]]
+#    twitter = "https://twitter.com/username"
+#
+#    [[params.author.links]]
+#    x-twitter = "https://twitter.com/username"
+#
+#    [[params.author.links]]
+#    whatsapp = "https://wa.me/phone-number"
+#
+#    [[params.author.links]]
+#    youtube = "https://youtube.com/username"
+#
+#    [[params.author.links]]
+#    ko-fi = "https://ko-fi.com/username"
+#
+#    [[params.author.links]]
+#    codeberg = "https://codeberg.org/username"

@@ -1,0 +1,11 @@
+{{ $link := .link }}
+{{ $ctx := .context }}
+{{ $parent := $ctx.RelPermalink }}
+
+<section class="space-y-10 w-full">
+  {{ range first 1 (where $ctx.Site.RegularPages "RelPermalink" $link) }}
+    {{ if ne .RelPermalink $parent }}
+      {{ partial "article-link/simple.html" . }}
+    {{ end }}
+  {{ end }}
+</section>
