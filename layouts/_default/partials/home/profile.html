@@ -143,8 +143,8 @@
 function switchTab(activeTab) {
   const tabs = [1, 2, 3];
   tabs.forEach(tab => {
-    const el = document.getElementById(tab${tab});
-    const btnEl = document.getElementById(tabBtn${tab});
+    const el = document.getElementById('tab${tab}');
+    const btnEl = document.getElementById('tabBtn${tab}');
     if (tab === activeTab) {
       el.classList.remove('translate-y-4', 'opacity-0', 'invisible', 'z-0');
       el.classList.add('translate-y-0', 'opacity-100', 'visible', 'z-10');
