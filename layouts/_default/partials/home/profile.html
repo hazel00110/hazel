@@ -102,14 +102,7 @@
         </div>
         <!-- Portfolio -->
         <div id="tab2" class="tab-pane absolute inset-0 transition-all duration-500 ease-in-out transform translate-y-4 opacity-0 invisible z-0 px-6 py-3 h-full overflow-y-auto scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
-          {{ partial "article.html" (dict
-            "link" "post/portfolio-one/"
-            "context" .
-          ) }}
-          {{ partial "article.html" (dict
-            "link" "post/portfolio-two/"
-            "context" .
-          ) }}
+          {{ .Content }}
         </div>
         <!--  -->
         <section class="prose dark:prose-invert px-4 w-full max-w-5xl mx-auto">

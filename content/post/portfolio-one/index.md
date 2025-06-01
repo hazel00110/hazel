@@ -7,6 +7,7 @@ slug: "portfolio-one"
 tags: ["portfolio", "css", "docs"]
 series: ["Portfolio"]
 series_order: 1
+type: "portfolio"
 ---
 
 This is my first portfolio.

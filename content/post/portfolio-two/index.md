@@ -7,10 +7,7 @@ slug: "portfolio-two"
 tags: ["portfolio", "css", "docs"]
 series: ["Portfolio"]
 series_order: 2
+type : "portfolio"
 ---
 
-This is my second portfolio.
-
-{{< timeline >}}
-{{< timelineItem icon="code" header="Dev" >}}Test{{< /timelineItem >}}
-{{< /timeline >}}
+{{< list title="Samples" cardView=true limit=6 where="Type" value="portfolio" >}}
