@@ -159,14 +159,15 @@ function switchTab(activeTab) {
     const el = document.getElementById(`tab${tab}`);
     const btnEl = document.getElementById(`tabBtn${tab}`);
     if (tab === activeTab) {
-      el.classList.remove('translate-y-4', 'opacity-0', 'invisible', 'z-0');
-      el.classList.add('translate-y-0', 'opacity-100', 'visible', 'z-10');
+      el.classList.remove('lg:translate-y-4', 'lg:opacity-0', 'lg:invisible', 'lg:z-0');
+      el.classList.add('lg:translate-y-0', 'lg:opacity-100', 'lg:visible', 'lg:z-10');
       btnEl.classList.add('text-primary-700', 'dark:text-primary-400', 'border-primary-700','dark:border-primary-400');
     } else {
-      el.classList.remove('translate-y-0', 'opacity-100', 'visible', 'z-10');
-      el.classList.add('translate-y-4', 'opacity-0', 'invisible', 'z-0');
+      el.classList.remove('tlg:ranslate-y-0', 'lg:opacity-100', 'lg:visible', 'lg:z-10');
+      el.classList.add('lg:translate-y-4', 'lg:opacity-0', 'lg:invisible', 'lg:z-0');
       btnEl.classList.remove('text-primary-700', 'dark:text-primary-400', 'border-primary-700','dark:border-primary-400');
     }
   });
 }
+document.addEventListener("DOMContentLoaded", () => switchTab(1));
 </script>
