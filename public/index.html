@@ -31,8 +31,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/hazel/css/main.bundle.min.56eb0f7b3a971e9e698683d85798aa26389f2b96396b146c2cc227555ebf80c0f03df25dc95ab61328a1ef84406dcbf15832d33d1a9ff3d6c4641e27eeab6dea.css"
-    integrity="sha512-VusPezqXHp5phoPYV5iqJjifK5Y5axRsLMInVV6/gMDwPfJdyVq2Eyih74RAbcvxWDLTPRqf89bEZB4n7qtt6g==" />
+  <link type="text/css" rel="stylesheet" href="/hazel/css/main.bundle.min.3f14e5606897f1855ffae8d5bfb02b2cbd327a31e99de4297d97d9fa0f983f6265c78f4a9925a4251c0fc90dc8bd853e0c1adca02399ba88dccf17ba0c7d4e3f.css"
+    integrity="sha512-PxTlYGiX8YVf&#43;ujVv7ArLL0yejHpneQpfZfZ&#43;g&#43;YP2Jlx49KmSWkJRwPyQ3IvYU&#43;DBrcoCOZuojczxe6DH1OPw==" />
   
   
   <script type="text/javascript" src="/hazel/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -634,7 +634,7 @@
           Skills</a>
       </div>
       
-      <div class="min-h-144 w-full backdrop-blur-md rounded-3xl overflow-hidden">
+      <div class="min-h-144 w-full lg:backdrop-blur-md rounded-3xl overflow-hidden">
         
         <div id="tab1" class="tab-pane lg:absolute lg:inset-0 lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:translate-y-0 lg:opacity-100 lg:visible lg:z-10 px-6 py-3 h-full overflow-y-auto scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
           <h1 class="myeffect text-base md:text-xl xl:text-2xl text-neutral-700 dark:text-neutral-400 flex items-center gap-1">
@@ -1001,6 +1001,7 @@
     </div>
   </header>
 </article>
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
 <script>
 function switchTab(activeTab) {
   const tabs = [1, 2, 3];
@@ -1019,6 +1020,11 @@ function switchTab(activeTab) {
   });
 }
 document.addEventListener("DOMContentLoaded", () => switchTab(1));
+window.addEventListener('scroll', function (e) {
+  var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  var background_blur = document.getElementById('background-blur');
+  background_blur.style.opacity = (scroll / 600)
+});
 </script>
 
   
