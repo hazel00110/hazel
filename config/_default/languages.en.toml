@@ -27,7 +27,7 @@ dateFormat = "2 January 2006"
   """
 
     [[params.author.links]]
-    email = "mailto:hello@your_domain.com"
+    email = "mailto:hazelfernanda001@gmail.com"
 
     [[params.author.links]]
     link = "https://link-to-some-website.com/"
@@ -36,7 +36,7 @@ dateFormat = "2 January 2006"
     amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id"
 
     [[params.author.links]]
-    linkedin = "https://linkedin.com/in/username"
+    linkedin = "https://linkedin.com/in/hazelpernanda"
 
     [[params.author.links]]
     apple = "https://www.apple.com"
