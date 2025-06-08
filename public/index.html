@@ -31,8 +31,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/hazel/css/main.bundle.min.95ff2b2ccae77a40b905f309eec1452a347d46622bf3e9ca71d32a874c0dab721fc8618d2121123b76c7348f9b326ae2a0c3d712d5f8e0c79ab6a5e62fd47423.css"
-    integrity="sha512-lf8rLMrnekC5BfMJ7sFFKjR9RmIr8&#43;nKcdMqh0wNq3IfyGGNISESO3bHNI&#43;bMmrioMPXEtX44MeatqXmL9R0Iw==" />
+  <link type="text/css" rel="stylesheet" href="/hazel/css/main.bundle.min.7513d2eb07c4ed3bb953057e75c009d5d1c92529394dc7b6077d23a8eca61d57ac2d2867738b9d517f09fe86e3c945ccdf1dfb1ee4bbac95f3002884fa9c5ce0.css"
+    integrity="sha512-dRPS6wfE7Tu5UwV&#43;dcAJ1dHJJSk5Tce2B30jqOymHVesLShnc4udUX8J/objyUXM3x37HuS7rJXzACiE&#43;pxc4A==" />
   
   
   <script type="text/javascript" src="/hazel/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -623,15 +623,31 @@
 
     
     <div class="h-full w-full pt-10 items-start text-left">
-      <div class="hidden lg:block font-medium px-6 flex flex-wrap gap-2 mb-6">
-        <a id="tabBtn1" class="backdrop-blur-2xl border border-neutral-700 rounded-2xl px-4 py-1 text-neutral-700 dark:text-neutral-400 no-underline hover:text-primary-700 hover:border-primary-700 dark:hover:text-primary-400 dark:hover:border-primary-400" onclick="switchTab(1)">
-          Me</a>
-        <a id="tabBtn2" class="backdrop-blur-2xl border border-neutral-700 rounded-2xl px-4 py-1 text-neutral-700 dark:text-neutral-400 no-underline hover:text-primary-700 hover:border-primary-700 dark:hover:text-primary-400 dark:hover:border-primary-400" onclick="switchTab(2)">
-          Portfolio</a>
-        <a id="tabBtn3" class="backdrop-blur-2xl border border-neutral-700 rounded-2xl px-4 py-1 text-neutral-700 dark:text-neutral-400 no-underline hover:text-primary-700 hover:border-primary-700 dark:hover:text-primary-400 dark:hover:border-primary-400" onclick="switchTab(3)">
-          Resume</a>
-        <a class="backdrop-blur-2xl border border-neutral-700 rounded-2xl px-4 py-1 text-neutral-700 dark:text-neutral-400 no-underline hover:bg-primary-500 dark:hover:bg-primary-400">
-          Skills</a>
+      <div class="hidden lg:block font-medium px-6 flex flex-wrap gap-4 mb-6">
+        <a id="tabBtn1" class="mr-4 cursor-pointer backdrop-blur-2xl border border-neutral-700 rounded-2xl px-4 py-2 text-neutral-700 dark:text-neutral-400 no-underline hover:text-primary-700 hover:border-primary-700 dark:hover:text-primary-400 dark:hover:border-primary-400" onclick="switchTab(1)">
+          <span class="mb-1 inline-block align-middle">
+            <span class="scale-200 relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="2 0 40 40"><g fill="currentColor"><path d="M10.182 25.473H32a.726.726 0 0 0 .727-.727V22.17a4.126 4.126 0 0 0-2.46-3.711 18.712 18.712 0 0 0-2.65-1 21.673 21.673 0 0 0-1.157-.313l-.019-.006a2.636 2.636 0 0 1-1.985-1.92c0-.021-.007-.049-.01-.076a6.862 6.862 0 0 0 2.1-5.049 5.318 5.318 0 0 0-5.454-5.658 5.319 5.319 0 0 0-5.455 5.663 6.859 6.859 0 0 0 2.095 5.043 1.95 1.95 0 0 1-.022.15 2.551 2.551 0 0 1-1.965 1.852c-.4.1-.794.205-1.187.322a18.4 18.4 0 0 0-2.646 1 4.122 4.122 0 0 0-2.457 3.7v2.58a.727.727 0 0 0 .727.726zM17.091 10.1a3.847 3.847 0 0 1 4-4.205 3.848 3.848 0 0 1 4 4.205c0 2.734-1.794 4.961-4 4.961s-4-2.229-4-4.961zM19 16.023a4.692 4.692 0 0 0 4.175 0 3.957 3.957 0 0 0 1.589 1.951c-.378.635-1.747 1.365-3.677 1.365-1.961 0-3.31-.715-3.681-1.352A3.892 3.892 0 0 0 19 16.023zm-8.1 6.143a2.683 2.683 0 0 1 1.624-2.391 17.037 17.037 0 0 1 2.439-.918c.366-.109.728-.209 1.108-.3.638 1.3 2.6 2.236 5.01 2.236s4.364-.934 5-2.238c.373.086.741.189 1.1.3a16.959 16.959 0 0 1 2.443.918 2.69 2.69 0 0 1 1.627 2.4v1.85H10.907v-1.857zM10.182 30.322H32a.728.728 0 0 0 0-1.456H10.182a.728.728 0 0 0 0 1.456zM10.182 35.172h15.03a.728.728 0 0 0 0-1.456h-15.03a.728.728 0 0 0 0 1.456z"/></g></svg>
+            </span>
+          </span>
+          <span class="pl-2">Me</span>
+        </a>
+        <a id="tabBtn2" class="mr-4 cursor-pointer backdrop-blur-2xl border border-neutral-700 rounded-2xl px-4 py-2 text-neutral-700 dark:text-neutral-400 no-underline hover:text-primary-700 hover:border-primary-700 dark:hover:text-primary-400 dark:hover:border-primary-400" onclick="switchTab(2)">
+          <span class="mb-1 inline-block align-middle">
+            <span class="pl-1/2 mr-1 scale-160 relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="enable-background:new 0 0 511.999 511.999" xml:space="preserve"><path style="fill:none" d="M477.317 160.58H204.443c-2.297-12.248-13.09-21.598-25.978-21.598H117.85c-12.89 0-23.681 9.35-25.98 21.598H71.129c-14.546 0-26.448 11.902-26.448 26.448v238.723c0 14.546 11.902 26.448 26.448 26.448h406.187c14.546 0 26.448-11.902 26.448-26.448V187.028c.001-14.546-11.901-26.448-26.447-26.448z"/><path style="fill:none" d="M141.329 59.805h282.659v302.576H141.329z"/><path style="fill:currentColor" d="M381.667 133.648H183.64a8.234 8.234 0 0 1-8.235-8.235 8.234 8.234 0 0 1 8.235-8.235h198.027a8.234 8.234 0 0 1 8.235 8.235 8.234 8.234 0 0 1-8.235 8.235zM381.667 180.179h-60.894a8.234 8.234 0 0 1-8.235-8.235 8.234 8.234 0 0 1 8.235-8.235h60.894a8.234 8.234 0 0 1 8.235 8.235 8.234 8.234 0 0 1-8.235 8.235zM291.13 180.179H183.641a8.234 8.234 0 0 1-8.235-8.235 8.234 8.234 0 0 1 8.235-8.235H291.13a8.234 8.234 0 0 1 8.235 8.235 8.236 8.236 0 0 1-8.235 8.235z"/><path style="fill:none" d="M467.704 247.99c-2.529-14.325-16.501-26.045-31.047-26.045H30.468c-14.546 0-24.376 11.72-21.847 26.045l31.461 178.164c2.531 14.324 16.501 26.045 31.047 26.045h406.187c14.546 0 24.376-11.721 21.847-26.045L467.704 247.99z"/><path style="fill:currentColor" d="M477.317 152.346h-45.1V59.8a8.234 8.234 0 0 0-8.235-8.235H141.324a8.235 8.235 0 0 0-8.235 8.235v70.948H117.85c-14.291 0-26.864 8.757-32.098 21.598H71.129c-19.124 0-34.682 15.558-34.682 34.682v26.683h-5.978c-9.372 0-17.987 3.86-23.634 10.591-5.647 6.732-7.953 15.887-6.323 25.12l31.461 178.165c3.199 18.112 20.765 32.847 39.157 32.847h406.187c19.124 0 34.682-15.558 34.682-34.682V187.028c.001-19.124-15.557-34.682-34.682-34.682zM149.558 68.034h266.19V213.71h-266.19V68.034zM52.916 187.028c0-10.042 8.17-18.213 18.213-18.213h20.742a8.235 8.235 0 0 0 8.093-6.715c1.619-8.623 9.141-14.883 17.887-14.883h15.239v66.494H52.916v-26.683zm435.418 252.228c-1.902 2.266-4.564 3.771-7.689 4.389-.152.029-.305.046-.458.07-.368.061-.736.122-1.114.16-.579.056-1.164.089-1.757.089H71.129c-10.591 0-21.096-8.812-22.939-19.242L16.73 246.56c-.793-4.49.173-8.635 2.722-11.671 2.546-3.036 6.459-4.707 11.017-4.707h406.187c10.592 0 21.097 8.811 22.939 19.242l31.461 178.163c.792 4.488-.174 8.633-2.722 11.669zm7.196-81.039L475.813 246.56c-3.196-18.113-20.762-32.848-39.157-32.848h-4.439v-44.896h45.1c10.042 0 18.213 8.17 18.213 18.213v171.188z"/></svg>
+            </span>
+          </span>
+          <span class="pl-2">Portfolio</span>
+        </a>
+        <a id="tabBtn3" class="mr-4 cursor-pointer backdrop-blur-2xl border border-neutral-700 rounded-2xl px-4 py-2 text-neutral-700 dark:text-neutral-400 no-underline hover:text-primary-700 hover:border-primary-700 dark:hover:text-primary-400 dark:hover:border-primary-400" onclick="switchTab(3)">
+          <span class="mb-1 inline-block align-middle">
+            <span class="scale-150 relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 0 50 50"><g fill="currentColor"><path d="M36.607 0H3.637A3.64 3.64 0 0 0 0 3.637v40.727A3.64 3.64 0 0 0 3.637 48h32.97a3.64 3.64 0 0 0 3.636-3.637V3.637A3.64 3.64 0 0 0 36.607 0zm2.182 44.363a2.185 2.185 0 0 1-2.182 2.182H3.637a2.185 2.185 0 0 1-2.182-2.182V3.636a2.185 2.185 0 0 1 2.182-2.182h32.97a2.185 2.185 0 0 1 2.182 2.182z"/><path d="M33.7 4.847H6.547a.728.728 0 0 0-.728.729v32.969a.728.728 0 0 0 .728.729H33.7a.728.728 0 0 0 .727-.729V5.576a.727.727 0 0 0-.727-.729zm-.727 32.971H7.274V6.3h25.7zM14.3 42.181h-1.935a.728.728 0 0 0 0 1.456H14.3a.728.728 0 1 0 0-1.456zM21.784 42.181H18.46a.728.728 0 1 0 0 1.456h3.324a.728.728 0 1 0 0-1.456zM27.88 42.181h-1.939a.728.728 0 1 0 0 1.456h1.939a.728.728 0 1 0 0-1.456z"/><path d="M23.517 11.658h4.848a.728.728 0 1 0 0-1.456h-4.848a.728.728 0 1 0 0 1.456zM11.88 11.658h7.758a.728.728 0 0 0 0-1.456H11.88a.728.728 0 1 0 0 1.456zM11.88 17.234h9.473a.728.728 0 1 0 0-1.456H11.88a.728.728 0 1 0 0 1.456zM28.364 21.355h-8.12a.727.727 0 1 0 0 1.454h8.12a.727.727 0 1 0 0-1.454zM11.88 22.808h4.484a.727.727 0 1 0 0-1.454H11.88a.727.727 0 1 0 0 1.454zM28.364 26.929h-4.476a.728.728 0 1 0 0 1.456h4.476a.728.728 0 1 0 0-1.456zM11.88 28.384h8.13a.728.728 0 1 0 0-1.456h-8.13a.728.728 0 1 0 0 1.456zM11.88 33.96h12.979a.728.728 0 1 0 0-1.456H11.88a.728.728 0 1 0 0 1.456z"/></g></svg>
+            </span>
+          </span>
+          <span class="pl-2">Resume</span>
+        </a>
+        <a class="mr-4 cursor-pointer backdrop-blur-2xl border border-neutral-700 rounded-2xl px-4 py-2 text-neutral-700 dark:text-neutral-400 no-underline hover:bg-primary-500 dark:hover:bg-primary-400">
+          Skills
+        </a>
       </div>
       
       <div class="min-h-144 w-full lg:backdrop-blur-md rounded-3xl overflow-hidden">
@@ -649,7 +665,7 @@
             </span>
           </h1>
           <h1 class="text-3xl xl:text-5xl text-neutral-700 dark:text-neutral-200 font-bold leading-tight">
-            <a class="bg-primary-600/80 text-neutral-50 dark:text-neutral-200">Computer Vision</a> Enthusiast,
+            <a class="bg-[#d8a71d]/70 text-neutral-50 dark:text-neutral-200">Computer Vision</a> Enthusiast,
             Student of Bachelor Mathematics
             Padjadjaran University, Indonesia
           </h1>
