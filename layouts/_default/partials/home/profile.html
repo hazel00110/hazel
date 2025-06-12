@@ -125,15 +125,74 @@
             <span class="h-6 w-6 absolute inset-0 z-15 bg-primary-700 dark:bg-primary-400 opacity-60"></span>
             <span class="h-3 w-4 absolute right-0 bottom-0 z-0 bg-primary-700 dark:bg-primary-400 opacity-60 pr-20"></span>
           </span>
-          <section class="mt-4">
-            {{ .Content }}
+          <section class="mt-4 flex flex-wrap gap-6">
+            {{ $svg := resources.Get "img/featured.svg" | resources.Minify | resources.Fingerprint }}
+            <a href="https://your-link-here.com" class="group block min-w-[250px] flex-1 basis-[250px] max-w-full lg:max-w-[250px] rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 relative">
+              <div class="relative w-full h-40 overflow-hidden">
+                {{ with $svg.Content }}
+                  <div class="absolute inset-0 z-0 pointer-events-none">
+                    {{ . | safeHTML }}
+                  </div>
+                {{ end }}
+                <div class="absolute inset-0 bg-gradient-to-t from-white via-white/70 to-transparent z-10"></div>
+              </div>
+              <div class="relative z-20 px-4 py-4">
+                <h2 class="font-semibold text-lg text-gray-900 group-hover:text-primary-600 transition-colors">Portfolio One</h2>
+                <p class="text-sm text-gray-500">5 words &bull; 1 min</p>
+              </div>
+            </a>
+            {{ $svg := resources.Get "img/featured.svg" | resources.Minify | resources.Fingerprint }}
+            <a href="https://your-link-here.com" class="group block min-w-[250px] flex-1 basis-[250px] max-w-full lg:max-w-[250px] rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 relative">
+              <div class="relative w-full h-40 overflow-hidden">
+                {{ with $svg.Content }}
+                  <div class="absolute inset-0 z-0 pointer-events-none">
+                    {{ . | safeHTML }}
+                  </div>
+                {{ end }}
+                <div class="absolute inset-0 bg-gradient-to-t from-white via-white/70 to-transparent z-10"></div>
+              </div>
+              <div class="relative z-20 px-4 py-4">
+                <h2 class="font-semibold text-lg text-gray-900 group-hover:text-primary-600 transition-colors">Portfolio One</h2>
+                <p class="text-sm text-gray-500">5 words &bull; 1 min</p>
+              </div>
+            </a>
+            {{ $svg := resources.Get "img/featured.svg" | resources.Minify | resources.Fingerprint }}
+            <a href="https://your-link-here.com" class="group block min-w-[250px] flex-1 basis-[250px] max-w-full lg:max-w-[250px] rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 relative">
+              <div class="relative w-full h-40 overflow-hidden">
+                {{ with $svg.Content }}
+                  <div class="absolute inset-0 z-0 pointer-events-none">
+                    {{ . | safeHTML }}
+                  </div>
+                {{ end }}
+                <div class="absolute inset-0 bg-gradient-to-t from-white via-white/70 to-transparent z-10"></div>
+              </div>
+              <div class="relative z-20 px-4 py-4">
+                <h2 class="font-semibold text-lg text-gray-900 group-hover:text-primary-600 transition-colors">Portfolio One</h2>
+                <p class="text-sm text-gray-500">5 words &bull; 1 min</p>
+              </div>
+            </a>
+            {{ $svg := resources.Get "img/featured.svg" | resources.Minify | resources.Fingerprint }}
+            <a href="https://your-link-here.com" class="group block min-w-[250px] flex-1 basis-[250px] max-w-full lg:max-w-[250px] rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 relative">
+              <div class="relative w-full h-40 overflow-hidden">
+                {{ with $svg.Content }}
+                  <div class="absolute inset-0 z-0 pointer-events-none">
+                    {{ . | safeHTML }}
+                  </div>
+                {{ end }}
+                <div class="absolute inset-0 bg-gradient-to-t from-white via-white/70 to-transparent z-10"></div>
+              </div>
+              <div class="relative z-20 px-4 py-4">
+                <h2 class="font-semibold text-lg text-gray-900 group-hover:text-primary-600 transition-colors">Portfolio One</h2>
+                <p class="text-sm text-gray-500">5 words &bull; 1 min</p>
+              </div>
+            </a>
           </section>
         </div>
         <!--  -->
         <section class="prose dark:prose-invert px-4 w-full max-w-5xl mx-auto">
         </section>
         <div id="tab3" class="tab-pane lg:absolute lg:inset-0 lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:translate-y-4 lg:opacity-0 lg:invisible lg:z-0 px-6 py-3 h-full overflow-y-auto scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
-          <span class="relative inline-block text-3xl mt-4 tracking-widest font-medium mb-4">
+          <span class="relative inline-block text-3xl mt-4 mb-12 tracking-widest font-medium mb-4">
             <span class="px-3 relative z-10">
               <a class="text-5xl">C</a>ERTIFICATES
             </span>
@@ -146,14 +205,14 @@
                 "header" "Introduction to Computer Vision and Image Processing"
                 "badge" "2023"
                 "subheader" "IBM"
-                "inner" (markdownify "Konten penjelasan timeline-nya di sini.")
+                "inner" (markdownify "- Utilize Python, Pillow, and OpenCV for basic image processing and perform image classification and object detection.\n- Apply image processing and analysis techniques to computer vision problems.\n- Create an image classifier using Supervised learning techniques.")
               ) }}
               {{ partial "myTimeline.html" (dict
                 "icon" "Utoronto"
-                "header" "Proyek Dikerjakan"
+                "header" "Self-Driving Car Specialization"
                 "badge" "2023"
-                "subheader" "Tahap 2"
-                "inner" (markdownify "Konten penjelasan timeline-nya di sini.")
+                "subheader" "University of Toronto"
+                "inner" (markdownify "- Understand the detailed architecture and components of a self-driving car software stack.\n- Use realistic vehicle physics, complete sensor suite: camera, LIDAR, GPS/INS, wheel odometry, depth map, semantic segmentation, object bounding boxes.\n- Implement methods for static and dynamic object detection, localization and mapping, behaviour and maneuver planning, and vehicle control.\n- Demonstrate skills in CARLA and build programs with Python.")
               ) }}
               {{ partial "myTimeline.html" (dict
                 "icon" "apple"
