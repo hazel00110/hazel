@@ -1,0 +1,11 @@
+
+{{ $icon := or .icon "check" }}
+{{ $header := .header }}
+<div class="rounded-full bg-primary-50 text-neutral-50 dark:text-neutral-700 text-3xl lg:p-6 items-center justify-center rounded-full">
+    <span class="inline-block align-middle">{{ partial "icon.html" $icon }}</span>
+</div>
+{{ if $header }}
+    <h2 class="mt-0">
+        {{ $header }} 
+    </h2>
+{{ end }}
