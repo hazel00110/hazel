@@ -116,10 +116,10 @@
         <!-- Portfolio -->
         <div id="tab2" class="tab-pane lg:absolute lg:inset-0 lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:translate-y-4 lg:opacity-0 lg:invisible lg:z-0 px-6 py-3 h-full overflow-y-auto scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
           <span class="relative inline-block text-3xl mt-4 tracking-widest font-medium mb-4">
-            <span class="px-3 relative z-10">
+            <span class="px-3 relative z-15">
               <a class="text-5xl">P</a>ORTFOLIO
             </span>
-            <span class="h-6 w-6 absolute inset-0 z-15 bg-primary-700 dark:bg-primary-400 opacity-60"></span>
+            <span class="h-6 w-6 absolute inset-0 z-10 bg-primary-700 dark:bg-primary-400 opacity-60"></span>
             <span class="h-3 w-4 absolute right-0 bottom-0 z-0 bg-primary-700 dark:bg-primary-400 opacity-60 pr-20"></span>
           </span>
           <section class="mt-4 flex flex-wrap gap-6">
@@ -190,26 +190,55 @@
         </section>
         <div id="tab3" class="tab-pane lg:absolute lg:inset-0 lg:transition-all lg:duration-500 lg:ease-in-out lg:transform lg:translate-y-4 lg:opacity-0 lg:invisible lg:z-0 px-6 py-3 h-full overflow-y-auto scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
           <span class="relative inline-block text-3xl mt-4 tracking-widest font-medium mb-4">
-            <span class="px-3 relative z-10">
+            <span class="px-3 relative z-15">
               <a class="text-5xl">S</a>KILLS
             </span>
-            <span class="h-6 w-6 absolute inset-0 z-15 bg-primary-700 dark:bg-primary-400 opacity-60"></span>
+            <span class="h-6 w-6 absolute inset-0 z-10 bg-primary-700 dark:bg-primary-400 opacity-60"></span>
             <span class="h-3 w-4 absolute right-0 bottom-0 z-0 bg-primary-700 dark:bg-primary-400 opacity-60 pr-20"></span>
           </span>
-          <div class="border max-w-full mb-12 border-neutral-400/50 rounded-2xl bg-neutral-600/5 dark:bg-neutral-100/5 py-4 flex flex-col items-center">
-            <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-800">
-              <div class="w-13 h-13">
-                {{ $icon := resources.Get "icons/tensorflow.svg" | resources.Minify }}
-                {{ $icon.Content | safeHTML }}
+          <div class="border max-w-full mb-12 mt-4 px-6 pb-4 border-neutral-400/50 rounded-2xl bg-neutral-600/5 dark:bg-neutral-100/5 py-4 grid grid-cols-2">
+            <div class="border-b-2 mb-6 border-neutral-400 mx-6 flex flex-row items-center">
+              <div class="mt-2 rounded-full px-4 pt-4 pb-3 bg-transparent text-primary-700 dark:text-primary-300">
+                <div class="w-13 h-13">
+                  {{ $icon := resources.Get "icons/python.svg" | resources.Minify }}
+                  {{ $icon.Content | safeHTML }}
+                </div>
               </div>
+              <div class="mb-2 mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">Python</div>
             </div>
-            <div class="mb-2 mt-2 text-md font-medium text-neutral-700 dark:text-neutral-300">TensorFlow</div>
+            <div class="border-b-2 mb-6 border-neutral-400 mx-6 flex flex-row items-center">
+              <div class="mt-2 rounded-full px-4 pt-4 pb-3 bg-transparent text-primary-700 dark:text-primary-300">
+                <div class="w-13 h-13">
+                  {{ $icon := resources.Get "icons/python.svg" | resources.Minify }}
+                  {{ $icon.Content | safeHTML }}
+                </div>
+              </div>
+              <div class="mb-2 mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">TensorFlow</div>
+            </div>
+            <div class="border-b-2 mb-6 border-neutral-400 mx-6 flex flex-row items-center">
+              <div class="mt-2 rounded-full px-4 pt-4 pb-3 bg-transparent text-primary-700 dark:text-primary-300">
+                <div class="w-13 h-13">
+                  {{ $icon := resources.Get "icons/tensorflow.svg" | resources.Minify }}
+                  {{ $icon.Content | safeHTML }}
+                </div>
+              </div>
+              <div class="mb-2 mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">TensorFlow</div>
+            </div>
+            <div class="border-b-2 mb-6 border-neutral-400 mx-6 flex flex-row items-center">
+              <div class="mt-2 rounded-full px-4 pt-4 pb-3 bg-transparent text-primary-700 dark:text-primary-300">
+                <div class="w-13 h-13">
+                  {{ $icon := resources.Get "icons/tensorflow.svg" | resources.Minify }}
+                  {{ $icon.Content | safeHTML }}
+                </div>
+              </div>
+              <div class="mb-2 mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">TensorFlow</div>
+            </div>
           </div>
           <span class="relative inline-block text-3xl mt-4 tracking-widest font-medium mb-4">
-            <span class="px-3 relative z-10">
+            <span class="px-3 relative z-15">
               <a class="text-5xl">T</a>OOLS
             </span>
-            <span class="h-6 w-6 absolute inset-0 z-15 bg-primary-700 dark:bg-primary-400 opacity-60"></span>
+            <span class="h-6 w-6 absolute inset-0 z-10 bg-primary-700 dark:bg-primary-400 opacity-60"></span>
             <span class="h-3 w-4 absolute right-0 bottom-0 z-0 bg-primary-700 dark:bg-primary-400 opacity-60 pr-20"></span>
           </span>
           <section class="mt-4 mb-12 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
@@ -280,10 +309,10 @@
             <!-- Add Keras, PyTorch, Azure, etc. -->
           </section>
           <span class="relative inline-block text-3xl mt-4 mb-12 tracking-widest font-medium mb-4">
-            <span class="px-3 relative z-10">
+            <span class="px-3 relative z-15">
               <a class="text-5xl">C</a>ERTIFICATES
             </span>
-            <span class="h-6 w-6 absolute inset-0 z-15 bg-primary-700 dark:bg-primary-400 opacity-60"></span>
+            <span class="h-6 w-6 absolute inset-0 z-10 bg-primary-700 dark:bg-primary-400 opacity-60"></span>
             <span class="h-3 w-4 absolute right-0 bottom-0 z-0 bg-primary-700 dark:bg-primary-400 opacity-60 pr-20"></span>
           </span>
           <section class="mx-auto list-none prose dark:prose-invert">
