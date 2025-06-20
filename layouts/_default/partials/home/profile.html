@@ -196,7 +196,7 @@
             <span class="h-6 w-6 absolute inset-0 z-10 bg-primary-700 dark:bg-primary-400 opacity-60"></span>
             <span class="h-3 w-4 absolute right-0 bottom-0 z-0 bg-primary-700 dark:bg-primary-400 opacity-60 pr-20"></span>
           </span>
-          <div class="border max-w-full mb-12 mt-4 px-6 pb-4 border-neutral-400/50 rounded-2xl bg-neutral-600/5 dark:bg-neutral-100/5 py-4 grid grid-cols-2">
+          <div class="border max-w-full mb-12 mt-4 px-6 pb-4 border-neutral-400/50 rounded-2xl bg-neutral-600/5 dark:bg-neutral-100/5 py-4 xl:grid grid-cols-2">
             <div class="border-b-2 mb-6 border-neutral-400 mx-6 flex flex-row items-center">
               <div class="mt-2 rounded-full px-4 pt-4 pb-3 bg-transparent text-primary-700 dark:text-primary-300">
                 <div class="w-13 h-13">
@@ -204,16 +204,38 @@
                   {{ $icon.Content | safeHTML }}
                 </div>
               </div>
-              <div class="mb-2 mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">Python</div>
+              <div class="mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">Python</div>
             </div>
             <div class="border-b-2 mb-6 border-neutral-400 mx-6 flex flex-row items-center">
               <div class="mt-2 rounded-full px-4 pt-4 pb-3 bg-transparent text-primary-700 dark:text-primary-300">
                 <div class="w-13 h-13">
-                  {{ $icon := resources.Get "icons/python.svg" | resources.Minify }}
+                  {{ $icon := resources.Get "icons/computerVision.svg" | resources.Minify }}
                   {{ $icon.Content | safeHTML }}
                 </div>
               </div>
-              <div class="mb-2 mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">TensorFlow</div>
+              <div class="mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">Computer Vision
+                <h1 class="tracking-normal text-base font-normal">Object detection, segmentation, etc.</h1>
+              </div>
+            </div>
+            <div class="border-b-2 mb-6 border-neutral-400 mx-6 flex flex-row items-center">
+              <div class="mt-2 rounded-full px-4 pt-4 pb-3 bg-transparent text-primary-700 dark:text-primary-300">
+                <div class="w-13 h-13">
+                  {{ $icon := resources.Get "icons/web.svg" | resources.Minify }}
+                  {{ $icon.Content | safeHTML }}
+                </div>
+              </div>
+              <div class="mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">Web Development
+                <h1 class="tracking-normal text-base font-normal">HTML, JavaScript, CSS</h1>
+              </div>
+            </div>
+            <div class="border-b-2 mb-6 border-neutral-400 mx-6 flex flex-row items-center">
+              <div class="mt-2 rounded-full px-4 pt-4 pb-3 bg-transparent text-primary-700 dark:text-primary-300">
+                <div class="w-13 h-13">
+                  {{ $icon := resources.Get "icons/data.svg" | resources.Minify }}
+                  {{ $icon.Content | safeHTML }}
+                </div>
+              </div>
+              <div class="mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">Data Processing</div>
             </div>
             <div class="border-b-2 mb-6 border-neutral-400 mx-6 flex flex-row items-center">
               <div class="mt-2 rounded-full px-4 pt-4 pb-3 bg-transparent text-primary-700 dark:text-primary-300">
@@ -222,21 +244,12 @@
                   {{ $icon.Content | safeHTML }}
                 </div>
               </div>
-              <div class="mb-2 mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">TensorFlow</div>
-            </div>
-            <div class="border-b-2 mb-6 border-neutral-400 mx-6 flex flex-row items-center">
-              <div class="mt-2 rounded-full px-4 pt-4 pb-3 bg-transparent text-primary-700 dark:text-primary-300">
-                <div class="w-13 h-13">
-                  {{ $icon := resources.Get "icons/tensorflow.svg" | resources.Minify }}
-                  {{ $icon.Content | safeHTML }}
-                </div>
-              </div>
-              <div class="mb-2 mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">TensorFlow</div>
+              <div class="mt-2 text-xl tracking-widest font-medium text-neutral-700 dark:text-neutral-300">asd</div>
             </div>
           </div>
           <span class="relative inline-block text-3xl mt-4 tracking-widest font-medium mb-4">
             <span class="px-3 relative z-15">
-              <a class="text-5xl">T</a>OOLS
+              <a class="text-5xl">T</a>OOLS & PLATFORMS
             </span>
             <span class="h-6 w-6 absolute inset-0 z-10 bg-primary-700 dark:bg-primary-400 opacity-60"></span>
             <span class="h-3 w-4 absolute right-0 bottom-0 z-0 bg-primary-700 dark:bg-primary-400 opacity-60 pr-20"></span>
@@ -244,7 +257,7 @@
           <section class="mt-4 mb-12 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
             <!-- Repeat this card for each tool -->
             <div class="border max-w-full border-neutral-400/50 rounded-2xl bg-neutral-600/5 dark:bg-neutral-100/5 py-4 flex flex-col items-center">
-              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-800">
+              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-200">
                 <div class="w-13 h-13">
                   {{ $icon := resources.Get "icons/tensorflow.svg" | resources.Minify }}
                   {{ $icon.Content | safeHTML }}
@@ -253,7 +266,7 @@
               <div class="mb-2 mt-2 text-md font-medium text-neutral-700 dark:text-neutral-300">TensorFlow</div>
             </div>
             <div class="border max-w-full border-neutral-400/50 rounded-2xl bg-neutral-600/5 dark:bg-neutral-100/5 py-4 flex flex-col items-center">
-              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-800">
+              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-200">
                 <div class="w-13 h-13">
                   {{ $icon := resources.Get "icons/pytorch.svg" | resources.Minify }}
                   {{ $icon.Content | safeHTML }}
@@ -262,7 +275,7 @@
               <div class="mb-2 mt-2 text-md font-medium text-neutral-700 dark:text-neutral-300">PyTorch</div>
             </div>
             <div class="border max-w-full border-neutral-400/50 rounded-2xl bg-neutral-600/5 dark:bg-neutral-100/5 py-4 flex flex-col items-center">
-              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-800">
+              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-200">
                 <div class="w-13 h-13">
                   {{ $icon := resources.Get "icons/opencv.svg" | resources.Minify }}
                   {{ $icon.Content | safeHTML }}
@@ -271,7 +284,7 @@
               <div class="mb-2 mt-2 text-md font-medium text-neutral-700 dark:text-neutral-300">OpenCv</div>
             </div>
             <div class="border max-w-full border-neutral-400/50 rounded-2xl bg-neutral-600/5 dark:bg-neutral-100/5 py-4 flex flex-col items-center">
-              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-800">
+              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-200">
                 <div class="w-13 h-13">
                   {{ $icon := resources.Get "icons/numpy.svg" | resources.Minify }}
                   {{ $icon.Content | safeHTML }}
@@ -280,7 +293,7 @@
               <div class="mb-2 mt-2 text-md font-medium text-neutral-700 dark:text-neutral-300">NumPy</div>
             </div>
             <div class="border max-w-full border-neutral-400/50 rounded-2xl bg-neutral-600/5 dark:bg-neutral-100/5 py-4 flex flex-col items-center">
-              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-800">
+              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-200">
                 <div class="w-13 h-13">
                   {{ $icon := resources.Get "icons/ultralytics.svg" | resources.Minify }}
                   {{ $icon.Content | safeHTML }}
@@ -289,7 +302,7 @@
               <div class="mb-2 mt-2 text-md font-medium text-center text-neutral-700 dark:text-neutral-300">Ultralytics YOLO</div>
             </div>
             <div class="border max-w-full border-neutral-400/50 rounded-2xl bg-neutral-600/5 dark:bg-neutral-100/5 py-4 flex flex-col items-center">
-              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-800">
+              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-200">
                 <div class="w-13 h-13">
                   {{ $icon := resources.Get "icons/pandas.svg" | resources.Minify }}
                   {{ $icon.Content | safeHTML }}
@@ -298,7 +311,7 @@
               <div class="mb-2 mt-2 text-md font-medium text-neutral-700 dark:text-neutral-300">Pandas</div>
             </div>
             <div class="border max-w-full border-neutral-400/50 rounded-2xl bg-neutral-600/5 dark:bg-neutral-100/5 py-4 flex flex-col items-center">
-              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-800">
+              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-200">
                 <div class="w-13 h-13">
                   {{ $icon := resources.Get "icons/vscode.svg" | resources.Minify }}
                   {{ $icon.Content | safeHTML }}
@@ -306,7 +319,15 @@
               </div>
               <div class="mb-2 mt-2 text-md font-medium text-neutral-700 dark:text-neutral-300">VS Code</div>
             </div>
-            <!-- Add Keras, PyTorch, Azure, etc. -->
+            <div class="border max-w-full border-neutral-400/50 rounded-2xl bg-neutral-600/5 dark:bg-neutral-100/5 py-4 flex flex-col items-center">
+              <div class="mx-16 mt-2 rounded-full p-4 bg-neutral-100 dark:bg-neutral-200">
+                <div class="w-13 h-13">
+                  {{ $icon := resources.Get "icons/openai.svg" | resources.Minify }}
+                  {{ $icon.Content | safeHTML }}
+                </div>
+              </div>
+              <div class="mb-2 mt-2 text-md font-medium text-neutral-700 dark:text-neutral-300">ChatGPT</div>
+            </div>
           </section>
           <span class="relative inline-block text-3xl mt-4 mb-12 tracking-widest font-medium mb-4">
             <span class="px-3 relative z-15">
